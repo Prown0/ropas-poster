@@ -1,0 +1,12 @@
+% Test: A float immediately after block title has one effective paragraph-separation gap.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+\blocktitle{Title}\begin{table}[H]\begin{tabular}{c}A\end{tabular}\caption{Table.}\end{table}
+\end{posterblock}
+\end{postergrid}
+\end{document}

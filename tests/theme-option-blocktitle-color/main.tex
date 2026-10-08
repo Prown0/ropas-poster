@@ -1,0 +1,11 @@
+% Test: American spelling equivalent: A theme accepts the American blocktitle-color key.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+% British-spelling counterpart: theme-option-blocktitle-colour/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{test-theme}{blocktitle-color=red}\posterSetTheme{test-theme}
+\begin{document}
+\blocktitle{Block heading}
+Visible test content.
+\end{document}

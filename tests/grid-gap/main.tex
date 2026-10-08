@@ -1,0 +1,15 @@
+% Test: Block separation uses half the grid gap on each adjacent block edge.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{2}[block-sep=28bp]
+\begin{posterblock}{1}{1}
+Left.
+\end{posterblock}
+\begin{posterblock}{1}{2}
+Right.
+\end{posterblock}
+\end{postergrid}
+\end{document}

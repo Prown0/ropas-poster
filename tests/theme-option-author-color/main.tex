@@ -1,0 +1,11 @@
+% Test: American spelling equivalent: A theme accepts the American author-color key.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+% British-spelling counterpart: theme-option-author-colour/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{test-theme}{author-color=red}\posterSetTheme{test-theme}
+\author{Ada}
+\begin{document}
+Visible test content.
+\end{document}

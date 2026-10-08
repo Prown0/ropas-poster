@@ -1,0 +1,9 @@
+% Test: Repeated subtitle calls retain the last value.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\subtitle{Old}\subtitle{New}
+\begin{document}
+Visible test content.
+\end{document}

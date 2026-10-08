@@ -1,0 +1,13 @@
+% Test: American spelling equivalent: Posterblock blocktitle-color rejects its invalid value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+% British-spelling counterpart: error-block-option-blocktitle-colour/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}[blocktitle-color=undefinedRopasColour]
+Invalid block option.
+\end{posterblock}
+\end{postergrid}
+\end{document}

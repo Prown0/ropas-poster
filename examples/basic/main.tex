@@ -1,0 +1,203 @@
+\documentclass{ropas-poster}
+
+\usepackage{booktabs}
+
+\title{Example for \texttt{ropas-poster} class}
+\subtitle{Basic example}
+\author{SHIN Chaehwan}
+\institute{Programming Research Laboratory (ROPAS), Seoul National University}
+\logos{../.images/logo-snu-eng.png,../.images/logo-ropas.png}
+
+\begin{document}
+  \begin{postergrid}{1}{2}
+    \begin{posterblock*}{1}{1}
+      \begin{postergrid}{2}{1}
+        \begin{posterblock}{1}{1}
+          \blocktitle{1. Mathematical expressions}
+
+          If \begin{math}
+            {x}\mathrel{\leq}{y}
+          \end{math} and \begin{math}
+            {y}\mathrel{\leq}{z}
+          \end{math}, then \begin{math}
+            {x}\mathrel{\leq}{z}
+          \end{math} for all \begin{math}
+            {x,y,z}\mathrel{\in}{X}
+          \end{math}.
+          That is, \begin{displaymath}
+            {\forall}{{x,y,z}\mathrel{\in}{X}}.\,{{{{x}\mathrel{\leq}{y}}\mathrel{\land}{{y}\mathrel{\leq}{z}}}\mathrel{\rightarrow}{{x}\mathrel{\leq}{z}}}.
+          \end{displaymath}
+        \end{posterblock}
+
+        \begin{posterblock}{2}{1}
+          \blocktitle{2. Lists}
+
+          Let \begin{math}
+            G
+          \end{math} be a set, \begin{math}
+            {\bullet}\mathrel{:}{{{G}\mathbin{\times}{G}}\mathbin{\rightarrow}{G}}
+          \end{math}, \begin{math}
+            {{\left(\cdot\right)}^{-1}}\mathrel{:}{{G}\mathbin{\rightarrow}{G}}
+          \end{math}, and \begin{math}
+            {e}\mathrel{\in}{G}
+          \end{math}.
+          If \begin{itemize}
+            \item
+            \begin{math}
+              \bullet
+            \end{math} is associative,
+            \item
+            \begin{math}
+              {{e}\mathbin{\bullet}{x}}\mathrel{=}{x}
+            \end{math} and \begin{math}
+              {{x}\mathbin{\bullet}{e}}\mathrel{=}{x}
+            \end{math} for all \begin{math}
+              {x}\mathrel{\in}{G}
+            \end{math}, and
+            \item
+            \begin{math}
+              {{{x}^{-1}}\mathbin{\bullet}{x}}\mathrel{=}{e}
+            \end{math} and \begin{math}
+              {{x}\mathbin{\bullet}{{x}^{-1}}}\mathrel{=}{e}
+            \end{math} for all \begin{math}
+              {x}\mathrel{\in}{G}
+            \end{math},
+          \end{itemize} then we call \begin{math}
+            \left({G},{\bullet},{{\left(\cdot\right)}^{-1}},{e}\right)
+          \end{math} a \textbf{group}.
+
+          Let \begin{math}
+            G
+          \end{math} be a set and \begin{math}
+            {\bullet}\mathrel{:}{{{G}\mathbin{\times}{G}}\mathbin{\rightarrow}{G}}
+          \end{math}.
+          If \begin{enumerate}
+            \item
+            \begin{math}
+              \bullet
+            \end{math} is associative, and
+            \item
+            there exists \begin{math}
+              {e}\mathrel{\in}{G}
+            \end{math} such that \begin{enumerate}
+              \item
+              \begin{math}
+                {{e}\mathbin{\bullet}{x}}\mathrel{=}{x}
+              \end{math}, and
+              \item
+              there exists \begin{math}
+                {y}\mathrel{\in}{G}
+              \end{math} such that \begin{math}
+                {{y}\mathbin{\bullet}{x}}\mathrel{=}{e}
+              \end{math} for all \begin{math}
+                {x}\mathrel{\in}{G}
+              \end{math},
+            \end{enumerate} then there uniquely exists a group with \begin{math}
+              G
+            \end{math} and \begin{math}
+              \bullet
+            \end{math}.
+          \end{enumerate}
+        \end{posterblock}
+      \end{postergrid}
+    \end{posterblock*}
+
+    \begin{posterblock*}{1}{2}
+      \begin{postergrid}{3}{1}[row-ratio={1,min,min}]
+        \begin{posterblock}{1}{1}
+          \blocktitle{3. Tables}
+
+          \begin{table}
+            \caption{Small table}
+            \begin{tabular}{ccc}
+              \toprule
+              Row 1 & Row 2 & Row 3 \\
+              \midrule
+              Item 1 & Item 2 & Item 3 \\
+              Item 4 & Item 5 & Item 6 \\
+              \bottomrule
+            \end{tabular}
+          \end{table}
+
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          \begin{table}
+            \caption{Big table}
+            \begin{tabular}{crcl}
+              \toprule
+              Symbol & English & & German \\
+              \midrule
+              \begin{math}
+                0
+              \end{math} & zero & \begin{math}
+                \leftrightarrow
+              \end{math} & Null \\
+              \begin{math}
+                1
+              \end{math} & one & \begin{math}
+                \leftrightarrow
+              \end{math} & Eins \\
+              \begin{math}
+                2
+              \end{math} & two & \begin{math}
+                \leftrightarrow
+              \end{math} & Zwei \\
+              \begin{math}
+                3
+              \end{math} & three & \begin{math}
+                \leftrightarrow
+              \end{math} & Drei \\
+              \begin{math}
+                4
+              \end{math} & four & \begin{math}
+                \leftrightarrow
+              \end{math} & Vier \\
+              \begin{math}
+                5
+              \end{math} & five & \begin{math}
+                \leftrightarrow
+              \end{math} & F\"unf \\
+              \begin{math}
+                6
+              \end{math} & six & \begin{math}
+                \leftrightarrow
+              \end{math} & Sechs \\
+              \begin{math}
+                7
+              \end{math} & seven & \begin{math}
+                \leftrightarrow
+              \end{math} & Sieben \\
+              \begin{math}
+                8
+              \end{math} & eight & \begin{math}
+                \leftrightarrow
+              \end{math} & Acht \\
+              \begin{math}
+                9
+              \end{math} & nine & \begin{math}
+                \leftrightarrow
+              \end{math} & Neun \\
+              \bottomrule
+            \end{tabular}
+          \end{table}
+        \end{posterblock}
+
+        \begin{posterblock}{2}{1}
+          \blocktitle{4. Minimum cell}
+
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        \end{posterblock}
+
+        \begin{posterblock}{3}{1}
+          \blocktitle{5. Thank you!}
+        \end{posterblock}
+      \end{postergrid}
+    \end{posterblock*}
+  \end{postergrid}
+\end{document}

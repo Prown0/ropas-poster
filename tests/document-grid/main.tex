@@ -1,0 +1,12 @@
+% Test: Document directly contains one postergrid as a grid-type block.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+Grid body.
+\end{posterblock}
+\end{postergrid}
+\end{document}

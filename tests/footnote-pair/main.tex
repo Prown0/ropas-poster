@@ -1,0 +1,12 @@
+% Test: Footnotemark and footnotetext pair their mark and text.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+Marked\footnotemark.\footnotetext{Paired note.}
+\end{posterblock}
+\end{postergrid}
+\end{document}

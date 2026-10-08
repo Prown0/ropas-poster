@@ -1,0 +1,12 @@
+% Test: Float-to-paragraph gaps are at least one paragraph separation without double adding.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+Before.\par\begin{table}[H]\begin{tabular}{c}A\end{tabular}\caption{Table.}\end{table}\par After.
+\end{posterblock}
+\end{postergrid}
+\end{document}

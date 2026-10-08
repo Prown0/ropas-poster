@@ -1,0 +1,9 @@
+% Test: PosterSetBlockColumnSep rejects an invalid BlockColumnSep value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\posterSetBlockColumnSep{-1bp}
+\begin{document}
+Visible test content.
+\end{document}

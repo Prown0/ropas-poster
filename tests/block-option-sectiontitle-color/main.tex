@@ -1,0 +1,13 @@
+% Test: American spelling equivalent: Posterblock sectiontitle-color accepts its valid value.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+% British-spelling counterpart: block-option-sectiontitle-colour/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}[sectiontitle-color=blue]
+Block option test.
+\end{posterblock}
+\end{postergrid}
+\end{document}

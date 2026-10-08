@@ -1,0 +1,10 @@
+% Test: American spelling equivalent: PosterSetBlocktitleColor rejects an invalid BlocktitleColor value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+% British-spelling counterpart: error-setter-blocktitle-colour/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\posterSetBlocktitleColor{undefinedRopasColour}
+\begin{document}
+Visible test content.
+\end{document}

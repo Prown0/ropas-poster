@@ -1,0 +1,22 @@
+% Test: Nested grids propagate their minimum height to their parent block.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{2}{1}[row-ratio={min,auto}]
+\begin{posterblock}{1}{1}
+\begin{postergrid}{2}{1}[row-ratio={1,1}]
+\begin{posterblock}{1}{1}
+Nested first.
+\end{posterblock}
+\begin{posterblock}{2}{1}
+Nested second.
+\end{posterblock}
+\end{postergrid}
+\end{posterblock}
+\begin{posterblock}{2}{1}
+Outer second.
+\end{posterblock}
+\end{postergrid}
+\end{document}

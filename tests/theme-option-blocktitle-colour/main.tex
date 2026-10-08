@@ -1,0 +1,10 @@
+% Test: A theme accepts the British blocktitle-colour key.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{test-theme}{blocktitle-colour=red}\posterSetTheme{test-theme}
+\begin{document}
+\blocktitle{Block heading}
+Visible test content.
+\end{document}

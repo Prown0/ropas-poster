@@ -1,0 +1,9 @@
+% Test: PosterSetHeaderLeading rejects an invalid HeaderLeading value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\posterSetHeaderLeading{-1bp}
+\begin{document}
+Visible test content.
+\end{document}

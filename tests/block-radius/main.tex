@@ -1,0 +1,12 @@
+% Test: Block corner radius is limited by half its shortest side.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}[corner-radius=1000bp]
+Rounded.
+\end{posterblock}
+\end{postergrid}
+\end{document}

@@ -1,0 +1,10 @@
+% Test: American spelling equivalent: PosterSetTextColor rejects an invalid TextColor value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+% British-spelling counterpart: error-setter-text-colour/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\posterSetTextColor{undefinedRopasColour}
+\begin{document}
+Visible test content.
+\end{document}

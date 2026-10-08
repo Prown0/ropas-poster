@@ -1,0 +1,15 @@
+% Test: An all-min grid uses its minimum total height rather than filling the parent.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{2}{1}[row-ratio={min,min}]
+\begin{posterblock}{1}{1}
+First.
+\end{posterblock}
+\begin{posterblock}{2}{1}
+Second.
+\end{posterblock}
+\end{postergrid}
+\end{document}

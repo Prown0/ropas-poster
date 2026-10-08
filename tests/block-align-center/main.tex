@@ -1,0 +1,13 @@
+% Test: American spelling equivalent: Block body content aligns vertically at center.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+% British-spelling counterpart: block-align-centre/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}[align=center]
+Short text.
+\end{posterblock}
+\end{postergrid}
+\end{document}

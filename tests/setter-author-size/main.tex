@@ -1,0 +1,9 @@
+% Test: PosterSetAuthorSize accepts a valid AuthorSize value.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterSetAuthorSize{36bp}
+\begin{document}
+Visible test content.
+\end{document}

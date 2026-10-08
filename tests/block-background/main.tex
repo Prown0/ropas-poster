@@ -1,0 +1,12 @@
+% Test: A block-specific colour paints only that block.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}[colour=yellow]
+Coloured.
+\end{posterblock}
+\end{postergrid}
+\end{document}

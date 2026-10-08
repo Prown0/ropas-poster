@@ -1,0 +1,16 @@
+% Test: The default theme defines all required keys, can be selected, and
+% gives the header its documented 36bp leading and 81bp subtitle size.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterSetTheme{default}
+\ExplSyntaxOn
+\dim_compare:nNnF { \g_ropas_header_leading_dim } = { 36bp }
+  { \PackageError{ropas-test}{Incorrect default header leading}{} }
+\dim_compare:nNnF { \g_ropas_subtitle_size_dim } = { 81bp }
+  { \PackageError{ropas-test}{Incorrect default subtitle size}{} }
+\ExplSyntaxOff
+\begin{document}
+Visible test content.
+\end{document}

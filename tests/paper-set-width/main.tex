@@ -1,0 +1,9 @@
+% Test: PosterSetPaperWidth changes width without changing height.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterSetPaperWidth{200mm}
+\begin{document}
+Visible test content.
+\end{document}

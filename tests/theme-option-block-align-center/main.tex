@@ -1,0 +1,10 @@
+% Test: American spelling equivalent: A theme accepts the American center value for block-align.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+% British-spelling counterpart: theme-option-block-align-centre/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{alignment-theme}{block-align=center}\posterSetTheme{alignment-theme}
+\begin{document}
+Visible test content.
+\end{document}

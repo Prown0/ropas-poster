@@ -1,0 +1,13 @@
+% Test: American spelling equivalent: Postergrid text-color rejects its invalid value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+% British-spelling counterpart: error-grid-option-text-colour/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}[text-color=undefinedRopasColour]
+\begin{posterblock}{1}{1}
+Invalid grid option.
+\end{posterblock}
+\end{postergrid}
+\end{document}

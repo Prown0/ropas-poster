@@ -1,0 +1,12 @@
+% Test: A posterblock spans two adjacent columns.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{2}
+\begin{posterblock}{1}{1-2}
+Spanning columns.
+\end{posterblock}
+\end{postergrid}
+\end{document}

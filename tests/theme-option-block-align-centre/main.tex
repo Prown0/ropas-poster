@@ -1,0 +1,9 @@
+% Test: A theme accepts the British centre value for block-align.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{alignment-theme}{block-align=centre}\posterSetTheme{alignment-theme}
+\begin{document}
+Visible test content.
+\end{document}

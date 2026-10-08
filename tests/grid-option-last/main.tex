@@ -1,0 +1,12 @@
+% Test: The final duplicate grid option overrides and validates the earlier value.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}[line-width=-1bp,line-width=0bp]
+\begin{posterblock}{1}{1}
+Final option.
+\end{posterblock}
+\end{postergrid}
+\end{document}

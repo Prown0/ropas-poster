@@ -1,0 +1,12 @@
+% Test: The default header background covers the header on the physical page,
+% including a title, and does not extend above the sheet.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterSetTextSize{12bp}
+\posterSetTitleSize{24bp}
+\title{Header background position}
+\begin{document}
+The header must have its dark background behind this poster's title.
+\end{document}

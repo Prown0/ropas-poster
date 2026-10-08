@@ -1,0 +1,9 @@
+% Test: An undefined base theme is an error.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{new}[missing]{}
+\begin{document}
+Visible.
+\end{document}

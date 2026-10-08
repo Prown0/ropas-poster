@@ -1,0 +1,9 @@
+% Test: A document-only section title fails in preamble.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\sectiontitle{Wrong}
+\begin{document}
+Visible.
+\end{document}

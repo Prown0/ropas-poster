@@ -1,0 +1,12 @@
+% Test: Poster-provided quote environment follows its documented paragraph and indentation layout.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+\begin{quote}Quoted paragraph.\end{quote}
+\end{posterblock}
+\end{postergrid}
+\end{document}

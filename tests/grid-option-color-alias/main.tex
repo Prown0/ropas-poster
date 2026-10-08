@@ -1,0 +1,12 @@
+% Test: American color spelling aliases British colour in grid options.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}[block-color=yellow]
+\begin{posterblock}{1}{1}
+Grid colour alias.
+\end{posterblock}
+\end{postergrid}
+\end{document}

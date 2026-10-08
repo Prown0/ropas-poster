@@ -1,0 +1,12 @@
+% Test: Postergrid rejects direct body text outside a child block.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+Direct text.\begin{posterblock}{1}{1}
+Child.
+\end{posterblock}
+\end{postergrid}
+\end{document}

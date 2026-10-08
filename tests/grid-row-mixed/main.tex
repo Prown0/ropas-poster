@@ -1,0 +1,15 @@
+% Test: A min row is allocated before the remaining auto row.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{2}{1}[row-ratio={min,auto}]
+\begin{posterblock}{1}{1}
+Short min row.
+\end{posterblock}
+\begin{posterblock}{2}{1}
+Auto row.
+\end{posterblock}
+\end{postergrid}
+\end{document}

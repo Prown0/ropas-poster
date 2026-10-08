@@ -1,0 +1,13 @@
+% Test: The LaTeX lrbox environment captures content that can be reused inside a poster block.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\newsavebox{\savedTestBox}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+\begin{lrbox}{\savedTestBox}Saved text.\end{lrbox}\usebox{\savedTestBox}
+\end{posterblock}
+\end{postergrid}
+\end{document}

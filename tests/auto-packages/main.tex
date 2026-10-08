@@ -1,0 +1,44 @@
+% Test: The class immediately provides booktabs, comment, etoolbox, hyperref,
+% microtype, and (on pdfLaTeX) cmap in the preamble, and their user-facing
+% commands work without explicit \usepackage. Framed is not auto-loaded.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\PassOptionsToPackage{colorlinks=true}{hyperref}
+\documentclass[paper=A4]{ropas-poster}
+\IfPackageLoadedTF{booktabs}{}{\errmessage{booktabs not loaded}}
+\IfPackageLoadedTF{comment}{}{\errmessage{comment not loaded}}
+\IfPackageLoadedTF{etoolbox}{}{\errmessage{etoolbox not loaded}}
+\IfPackageLoadedTF{framed}{\errmessage{framed unexpectedly loaded}}{}
+\IfPackageLoadedTF{hyperref}{}{\errmessage{hyperref not loaded}}
+\IfPackageLoadedTF{microtype}{}{\errmessage{microtype not loaded}}
+\ExplSyntaxOn
+\sys_if_engine_pdftex:T
+ {
+  \IfPackageLoadedTF{cmap}{}{\errmessage{cmap not loaded}}
+ }
+\ExplSyntaxOff
+\hypersetup{urlcolor=blue}
+\begin{document}
+\blocktitle{Packages}
+
+\begin{comment}
+\errmessage{comment did not suppress its body}
+\end{comment}
+
+The \href{https://example.org}{link} should be clickable.
+\hypertarget{link-target}{This is a link target.}
+\hyperlink{link-target}{Jump to the linked text.}
+\microtypesetup{protrusion=true}
+
+\begin{table}
+\caption{Booktabs rules}
+\begin{tabular}{ll}
+\toprule
+Name & Value \\
+\midrule
+A & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{document}

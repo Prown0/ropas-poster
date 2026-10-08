@@ -1,0 +1,12 @@
+% Test: A posterblock spans two adjacent rows.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{2}{1}
+\begin{posterblock}{1-2}{1}
+Spanning rows.
+\end{posterblock}
+\end{postergrid}
+\end{document}

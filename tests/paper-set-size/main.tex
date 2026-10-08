@@ -1,0 +1,9 @@
+% Test: PosterSetPaperSize accepts a named paper and orientation.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterSetPaperSize[landscape]{A3}
+\begin{document}
+Visible test content.
+\end{document}

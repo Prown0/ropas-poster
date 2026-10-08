@@ -1,0 +1,9 @@
+% Test: PosterSetBlockCornerRadius rejects an invalid BlockCornerRadius value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\posterSetBlockCornerRadius{-1bp}
+\begin{document}
+Visible test content.
+\end{document}

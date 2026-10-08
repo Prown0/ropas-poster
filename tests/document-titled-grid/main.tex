@@ -1,0 +1,12 @@
+% Test: Document title reserves its own area above a nested grid.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\blocktitle{Outer title}\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+Nested body.
+\end{posterblock}
+\end{postergrid}
+\end{document}

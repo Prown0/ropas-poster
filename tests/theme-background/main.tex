@@ -1,0 +1,9 @@
+% Test: Header and body background commands each receive width and height.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\newcount\testHeaderCalls\newcount\testBodyCalls\newcommand{\testHeaderBackground}[2]{\global\advance\testHeaderCalls by 1 \ifdim#1>0pt\else\errmessage{Header background width}\fi \ifdim#2>0pt\else\errmessage{Header background height}\fi}\newcommand{\testBodyBackground}[2]{\global\advance\testBodyCalls by 1 \ifdim#1>0pt\else\errmessage{Body background width}\fi \ifdim#2>0pt\else\errmessage{Body background height}\fi}\posterSetHeaderBackground{\testHeaderBackground}\posterSetBodyBackground{\testBodyBackground}\AtEndDocument{\ifnum\testHeaderCalls=1\else\errmessage{Header callback count}\fi \ifnum\testBodyCalls=1\else\errmessage{Body callback count}\fi}
+\begin{document}
+Visible test content.
+\end{document}

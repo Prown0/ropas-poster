@@ -1,0 +1,10 @@
+% Test: American spelling equivalent: PosterSetSectiontitleColor rejects an invalid SectiontitleColor value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+% British-spelling counterpart: error-setter-sectiontitle-colour/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\posterSetSectiontitleColor{undefinedRopasColour}
+\begin{document}
+Visible test content.
+\end{document}

@@ -1,0 +1,11 @@
+% Test: American spelling equivalent: A theme accepts the American title-color key.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+% British-spelling counterpart: theme-option-title-colour/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{test-theme}{title-color=red}\posterSetTheme{test-theme}
+\title{Title}
+\begin{document}
+Visible test content.
+\end{document}

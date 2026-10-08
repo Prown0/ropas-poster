@@ -1,0 +1,10 @@
+% Test: American spelling equivalent: PosterSetTitleColor rejects an invalid TitleColor value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+% British-spelling counterpart: error-setter-title-colour/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\posterSetTitleColor{undefinedRopasColour}
+\begin{document}
+Visible test content.
+\end{document}

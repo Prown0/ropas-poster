@@ -1,0 +1,15 @@
+% Test: Explicit default ratio tokens equal implicit auto rows and unit columns.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{2}[row-ratio=default,col-ratio=default]
+\begin{posterblock}{1}{1}
+Left.
+\end{posterblock}
+\begin{posterblock}{1}{2}
+Right.
+\end{posterblock}
+\end{postergrid}
+\end{document}

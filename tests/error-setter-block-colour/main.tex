@@ -1,0 +1,9 @@
+% Test: PosterSetBlockColour rejects an invalid BlockColour value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\posterSetBlockColour{undefinedRopasColour}
+\begin{document}
+Visible test content.
+\end{document}

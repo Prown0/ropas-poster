@@ -1,0 +1,13 @@
+% Test: figure* placement h respects its allowed position and caption.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+% Minimum-class-warning: 1
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}[column-count=2]
+\begin{figure*}[h]\rule{30bp}{20bp}\caption{Caption.}\end{figure*}
+\end{posterblock}
+\end{postergrid}
+\end{document}

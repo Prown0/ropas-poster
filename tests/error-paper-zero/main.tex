@@ -1,0 +1,8 @@
+% Test: Zero custom paper width is an error.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper={0mm,100mm}]{ropas-poster}
+\begin{document}
+Visible.
+\end{document}

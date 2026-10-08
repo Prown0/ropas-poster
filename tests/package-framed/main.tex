@@ -1,0 +1,15 @@
+% Test: framed is not loaded by ropas-poster automatically, but users can
+% load it explicitly and typeset its framed environment with all three engines.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\IfPackageLoadedTF{framed}{\errmessage{framed unexpectedly loaded}}{}
+\usepackage{framed}
+\begin{document}
+\IfPackageLoadedTF{framed}{}{\errmessage{framed not loaded}}
+\blocktitle{Frame}
+\begin{framed}
+Box.
+\end{framed}
+\end{document}

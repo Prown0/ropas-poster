@@ -1,0 +1,16 @@
+% Test: American spelling equivalent: Zero line width suppresses separator lines regardless of line color.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+% British-spelling counterpart: grid-line-zero/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{2}[line-width=0bp,line-color=red]
+\begin{posterblock}{1}{1}
+Left.
+\end{posterblock}
+\begin{posterblock}{1}{2}
+Right.
+\end{posterblock}
+\end{postergrid}
+\end{document}

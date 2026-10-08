@@ -1,0 +1,11 @@
+% Test: American spelling equivalent: A theme accepts the American sectiontitle-color key.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+% British-spelling counterpart: theme-option-sectiontitle-colour/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{test-theme}{sectiontitle-color=blue}\posterSetTheme{test-theme}
+\begin{document}
+\sectiontitle{Section heading}
+Visible test content.
+\end{document}

@@ -1,0 +1,12 @@
+% Test: The poster-provided lemma environment uses the documented ACM theorem style.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+\begin{lemma}A lemma statement.\end{lemma}
+\end{posterblock}
+\end{postergrid}
+\end{document}

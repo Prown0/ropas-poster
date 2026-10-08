@@ -1,0 +1,10 @@
+% Test: A theme accepts the British title-colour key.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{test-theme}{title-colour=red}\posterSetTheme{test-theme}
+\title{Title}
+\begin{document}
+Visible test content.
+\end{document}

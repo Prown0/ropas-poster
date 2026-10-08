@@ -1,0 +1,12 @@
+% Test: Block body content aligns vertically at bottom.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}[align=bottom]
+Short text.
+\end{posterblock}
+\end{postergrid}
+\end{document}

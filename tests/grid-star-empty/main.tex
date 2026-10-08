@@ -1,0 +1,10 @@
+% Test: A posterblock* may contain no child grid and has zero intrinsic height.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock*}{1}{1}\end{posterblock*}
+\end{postergrid}
+\end{document}

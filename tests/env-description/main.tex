@@ -1,0 +1,12 @@
+% Test: The supported LaTeX environment description compiles and typesets inside a block.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+\begin{description}\item[Name] Description\item Other\end{description}
+\end{posterblock}
+\end{postergrid}
+\end{document}

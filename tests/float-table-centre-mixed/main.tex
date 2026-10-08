@@ -1,0 +1,26 @@
+% Test: A top float followed by a paragraph forms one vertically centred
+% content group inside the posterblock.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterSetTextSize{12bp}
+\posterSetBlocktitleSize{14bp}
+\posterSetBlockMargin{8bp}
+\posterSetBlockSep{0bp}
+\posterSetBlockParagraphSep{10bp}
+\begin{document}
+\begin{postergrid}{1}{1}
+  \begin{posterblock}{1}{1}[align=centre]
+    \blocktitle{Table and paragraph}
+    \begin{table}[t]
+      \caption{A small table}
+      \begin{tabular}{cc}
+        First & Second \\
+        One & Two
+      \end{tabular}
+    \end{table}
+    This paragraph belongs below the table in the same centred group.
+  \end{posterblock}
+\end{postergrid}
+\end{document}

@@ -1,0 +1,9 @@
+% Test: The final repeated theme key value wins without error.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{repeated}{text-colour=red,text-colour=blue}\posterSetTheme{repeated}
+\begin{document}
+Visible test content.
+\end{document}

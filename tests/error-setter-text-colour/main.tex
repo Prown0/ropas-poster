@@ -1,0 +1,9 @@
+% Test: PosterSetTextColour rejects an invalid TextColour value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\posterSetTextColour{undefinedRopasColour}
+\begin{document}
+Visible test content.
+\end{document}

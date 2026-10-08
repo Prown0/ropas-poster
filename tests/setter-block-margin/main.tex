@@ -1,0 +1,9 @@
+% Test: PosterSetBlockMargin accepts a valid BlockMargin value.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterSetBlockMargin{20bp}
+\begin{document}
+Visible test content.
+\end{document}

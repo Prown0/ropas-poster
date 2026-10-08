@@ -1,0 +1,12 @@
+% Test: The corollary environment accepts optional theorem information.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+\begin{corollary}[Named]A statement.\end{corollary}
+\end{posterblock}
+\end{postergrid}
+\end{document}

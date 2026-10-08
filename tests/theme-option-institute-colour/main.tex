@@ -1,0 +1,10 @@
+% Test: A theme accepts the British institute-colour key.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{test-theme}{institute-colour=blue}\posterSetTheme{test-theme}
+\institute{Lab}
+\begin{document}
+Visible test content.
+\end{document}

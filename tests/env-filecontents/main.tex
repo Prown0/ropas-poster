@@ -1,0 +1,11 @@
+% Test: The LaTeX filecontents environment is usable before document without disturbing poster output.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\begin{filecontents*}{probe.txt}
+File-contents probe.
+\end{filecontents*}
+\begin{document}
+Visible test content.
+\end{document}

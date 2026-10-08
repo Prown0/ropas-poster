@@ -1,0 +1,10 @@
+% Test: American spelling equivalent: A theme can inherit from an already-defined custom theme.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+% British-spelling counterpart: theme-base/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{first}{text-color=red}\posterDefineTheme{second}[first]{block-color=yellow}\posterSetTheme{second}
+\begin{document}
+Visible test content.
+\end{document}

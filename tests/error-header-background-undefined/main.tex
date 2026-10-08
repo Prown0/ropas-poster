@@ -1,0 +1,9 @@
+% Test: Undefined header-background callback fails at document start.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\posterSetHeaderBackground{\missingHeadBg}
+\begin{document}
+Visible test content.
+\end{document}

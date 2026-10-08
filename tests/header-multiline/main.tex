@@ -1,0 +1,9 @@
+% Test: Header leading controls two lines of one title.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\title{First line\\Second line}\posterSetHeaderLeading{20bp}
+\begin{document}
+Visible test content.
+\end{document}

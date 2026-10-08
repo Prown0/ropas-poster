@@ -1,0 +1,10 @@
+% Test: American spelling equivalent: PosterSetTextColor is forbidden after document begins.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+% British-spelling counterpart: error-late-setter-text-colour/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\posterSetTextColor{red}
+Visible test content.
+\end{document}

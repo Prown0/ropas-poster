@@ -1,0 +1,17 @@
+% Test: A block spanning min and auto rows contributes one minimum-height constraint.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{2}{2}[row-ratio={min,auto}]
+\begin{posterblock}{1-2}{1}
+A tall spanning block.
+
+Second paragraph.
+\end{posterblock}
+\begin{posterblock}{2}{2}
+Other column.
+\end{posterblock}
+\end{postergrid}
+\end{document}

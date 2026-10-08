@@ -1,0 +1,12 @@
+% Test: Footnotes appear at the bottom of a titled block's content area.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+\blocktitle{Titled block}Body\footnote{Bottom note.}
+\end{posterblock}
+\end{postergrid}
+\end{document}

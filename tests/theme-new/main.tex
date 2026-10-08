@@ -1,0 +1,9 @@
+% Test: A new theme inherits unspecified values from default.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{custom}{text-colour=red}\posterSetTheme{custom}
+\begin{document}
+Visible test content.
+\end{document}

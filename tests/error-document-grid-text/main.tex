@@ -1,0 +1,12 @@
+% Test: Document grid mode rejects text beside its direct grid.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+Text.\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+Child.
+\end{posterblock}
+\end{postergrid}
+\end{document}

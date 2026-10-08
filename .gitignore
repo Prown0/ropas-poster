@@ -1,0 +1,14 @@
+_codex
+_not_included
+docs/README-original.md
+examples/*/ropas-poster
+examples/*/ropas-poster.cls
+references
+
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.xdv

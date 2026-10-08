@@ -1,0 +1,14 @@
+% Test: Paragraph separation is the actual inter-paragraph gap, not an added gap.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}[paragraph-sep=18bp]
+First paragraph.
+
+Second paragraph.
+\end{posterblock}
+\end{postergrid}
+\end{document}

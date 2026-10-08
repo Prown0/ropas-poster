@@ -1,0 +1,19 @@
+% Test: A posterblock can contain a second grid with independent rows.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+\begin{postergrid}{2}{1}
+\begin{posterblock}{1}{1}
+Inner top.
+\end{posterblock}
+\begin{posterblock}{2}{1}
+Inner bottom.
+\end{posterblock}
+\end{postergrid}
+\end{posterblock}
+\end{postergrid}
+\end{document}

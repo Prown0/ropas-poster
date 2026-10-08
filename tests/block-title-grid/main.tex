@@ -1,0 +1,16 @@
+% Test: A grid-type block places its title above its child grid.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+\blocktitle{Parent title}\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+Child.
+\end{posterblock}
+\end{postergrid}
+\end{posterblock}
+\end{postergrid}
+\end{document}

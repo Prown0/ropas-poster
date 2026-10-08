@@ -1,0 +1,10 @@
+% Test: A virtual block cannot directly contain a block title.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock*}{1}{1}\blocktitle{Wrong}\end{posterblock*}
+\end{postergrid}
+\end{document}

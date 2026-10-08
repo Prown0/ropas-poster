@@ -1,0 +1,12 @@
+% Test: A body block may contain several section titles.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+\sectiontitle{One}A.\sectiontitle{Two}B.
+\end{posterblock}
+\end{postergrid}
+\end{document}

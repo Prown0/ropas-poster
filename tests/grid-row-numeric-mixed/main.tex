@@ -1,0 +1,21 @@
+% Test: Fixed-ratio rows coexist with min and auto rows.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{4}{1}[row-ratio={1,min,2,auto}]
+\begin{posterblock}{1}{1}
+Row 1.
+\end{posterblock}
+\begin{posterblock}{2}{1}
+Row 2.
+\end{posterblock}
+\begin{posterblock}{3}{1}
+Row 3.
+\end{posterblock}
+\begin{posterblock}{4}{1}
+Row 4.
+\end{posterblock}
+\end{postergrid}
+\end{document}

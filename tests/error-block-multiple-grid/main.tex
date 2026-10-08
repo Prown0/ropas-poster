@@ -1,0 +1,20 @@
+% Test: A grid-type block cannot directly contain two grids.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+First.
+\end{posterblock}
+\end{postergrid}\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+Second.
+\end{posterblock}
+\end{postergrid}
+\end{posterblock}
+\end{postergrid}
+\end{document}

@@ -1,0 +1,9 @@
+% Test: An individually braced logo filename may contain a comma.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\logo{{name,with-comma.png}}
+\begin{document}
+Visible test content.
+\end{document}

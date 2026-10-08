@@ -1,0 +1,27 @@
+% Test: Every SNU and ACM xcolor name promised by the class is available to
+% xcolor commands and to poster colour settings, including ACMLightBlue.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterSetTextSize{12bp}
+\posterSetBlockColour{ACMLightBlue}
+\posterSetTextColour{ACMDarkBlue}
+\begin{document}
+\begin{postergrid}{1}{1}
+  \begin{posterblock}{1}{1}[colour=SNUBeige]
+    \blocktitle{Named colours}
+    \textcolor{SNUBlue}{SNUBlue}
+    \textcolor{SNUGray}{SNUGray}
+    \textcolor{ACMBlue}{ACMBlue}
+    \textcolor{ACMYellow}{ACMYellow}
+    \textcolor{ACMOrange}{ACMOrange}
+    \textcolor{ACMRed}{ACMRed}
+    \textcolor{ACMLightBlue}{ACMLightBlue}
+    \textcolor{ACMGreen}{ACMGreen}
+    \textcolor{ACMPurple}{ACMPurple}
+    \textcolor{ACMDarkBlue}{ACMDarkBlue}
+    \colorbox{theme-default-bg}{\textcolor{theme-default-text}{Theme colours}}
+  \end{posterblock}
+\end{postergrid}
+\end{document}

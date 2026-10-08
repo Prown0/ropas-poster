@@ -1,0 +1,9 @@
+% Test: PosterSetBlockMargin rejects an invalid BlockMargin value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\posterSetBlockMargin{-1bp}
+\begin{document}
+Visible test content.
+\end{document}

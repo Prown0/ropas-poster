@@ -1,0 +1,9 @@
+% Test: PosterSetBlockColumnCount rejects an invalid BlockColumnCount value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\posterSetBlockColumnCount{0}
+\begin{document}
+Visible test content.
+\end{document}

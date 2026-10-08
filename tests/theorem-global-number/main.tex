@@ -1,0 +1,15 @@
+% Test: Theorem numbering continues across blocks and theorem kinds.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{2}
+\begin{posterblock}{1}{1}
+\begin{theorem}First.\end{theorem}
+\end{posterblock}
+\begin{posterblock}{1}{2}
+\begin{definition}Second.\end{definition}
+\end{posterblock}
+\end{postergrid}
+\end{document}

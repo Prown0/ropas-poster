@@ -1,0 +1,12 @@
+% Test: Footnote marker and footnote text are placed within the owning block.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+Text\footnote{A note in this block.} continues.
+\end{posterblock}
+\end{postergrid}
+\end{document}

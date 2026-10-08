@@ -1,0 +1,16 @@
+% Test: A footnote belongs to the nested block containing its mark.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+Child mark\footnote{Child note.}
+\end{posterblock}
+\end{postergrid}
+\end{posterblock}
+\end{postergrid}
+\end{document}

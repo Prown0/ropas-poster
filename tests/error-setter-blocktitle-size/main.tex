@@ -1,0 +1,9 @@
+% Test: PosterSetBlocktitleSize rejects an invalid BlocktitleSize value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\posterSetBlocktitleSize{0bp}
+\begin{document}
+Visible test content.
+\end{document}

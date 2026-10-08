@@ -1,0 +1,9 @@
+% Test: And separates authors by horizontal space, not a new block.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\author{Ada\and Bob}
+\begin{document}
+Visible test content.
+\end{document}

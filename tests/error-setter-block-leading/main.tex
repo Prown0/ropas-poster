@@ -1,0 +1,9 @@
+% Test: PosterSetBlockLeading rejects an invalid BlockLeading value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\posterSetBlockLeading{-1bp}
+\begin{document}
+Visible test content.
+\end{document}

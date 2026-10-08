@@ -1,0 +1,9 @@
+% Test: PosterSetTitleColour is forbidden after document begins.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\posterSetTitleColour{red}
+Visible test content.
+\end{document}

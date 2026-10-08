@@ -1,0 +1,12 @@
+% Test: The supported LaTeX environment tabular-star compiles and typesets inside a block.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+\begin{tabular*}{80bp}{@{\extracolsep{\fill}}cc}A&B\end{tabular*}
+\end{posterblock}
+\end{postergrid}
+\end{document}

@@ -1,0 +1,9 @@
+% Test: PosterSetAuthorSize rejects an invalid AuthorSize value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\posterSetAuthorSize{0bp}
+\begin{document}
+Visible test content.
+\end{document}

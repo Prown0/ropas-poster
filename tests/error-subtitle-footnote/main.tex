@@ -1,0 +1,9 @@
+% Test: Subtitle metadata cannot contain a footnote command.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\subtitle{Wrong\footnote{Note.}}
+\begin{document}
+Visible.
+\end{document}

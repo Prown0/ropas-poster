@@ -1,0 +1,14 @@
+% Test: Overfull block content is retained and emits a class info message.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+% Minimum-class-info: 1
+\documentclass[paper={80mm,80mm}]{ropas-poster}
+\posterSetPaperMarginSide{2bp}\posterSetBlockMargin{2bp}\posterSetHeaderMarginTop{0bp}\posterSetHeaderMarginBottom{0bp}\posterSetBodyMarginTop{0bp}\posterSetBodyMarginBottom{0bp}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}[margin=4bp,text-size=18bp]
+This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. This paragraph is long. 
+\end{posterblock}
+\end{postergrid}
+\end{document}

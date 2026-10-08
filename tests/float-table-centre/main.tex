@@ -1,0 +1,30 @@
+% Test: A top-placed table is at the top of the vertically centred content group,
+% not pinned to the top of its posterblock; the title/body gap is preserved.
+% Its one-line caption and tabular are centred horizontally.  At a 12bp
+% block text-size, tabular side padding is 6bp on each side.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterSetTextSize{12bp}
+\posterSetBlocktitleSize{14bp}
+\posterSetBlockMargin{8bp}
+\posterSetBlockSep{0bp}
+\posterSetBlockParagraphSep{10bp}
+\begin{document}
+\begin{postergrid}{1}{1}
+  \begin{posterblock}{1}{1}[align=centre]
+    \blocktitle{Centred table}
+    \ifdim\tabcolsep=6bp\else
+      \PackageError{ropas-test}{Incorrect block tabular spacing}{}
+    \fi
+    \begin{table}[t]
+      \caption{A small table}
+      \begin{tabular}{cc}
+        First & Second \\
+        One & Two
+      \end{tabular}
+    \end{table}
+  \end{posterblock}
+\end{postergrid}
+\end{document}

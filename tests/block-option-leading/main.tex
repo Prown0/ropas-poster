@@ -1,0 +1,12 @@
+% Test: Posterblock leading accepts its valid value.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}[leading=5bp]
+Block option test.
+\end{posterblock}
+\end{postergrid}
+\end{document}

@@ -1,0 +1,15 @@
+% Test: Positive line width draws separators on internal grid boundaries.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{2}[line-width=2bp,line-colour=red]
+\begin{posterblock}{1}{1}
+Left.
+\end{posterblock}
+\begin{posterblock}{1}{2}
+Right.
+\end{posterblock}
+\end{postergrid}
+\end{document}

@@ -1,0 +1,10 @@
+% Test: American spelling equivalent: PosterSetAuthorColor is forbidden after document begins.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+% British-spelling counterpart: error-late-setter-author-colour/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\posterSetAuthorColor{red}
+Visible test content.
+\end{document}

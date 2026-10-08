@@ -1,0 +1,9 @@
+% Test: Repeated logo calls append to the ordered logo list.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\logo{example-image-a.png}\logo{example-image-b.png}
+\begin{document}
+Visible test content.
+\end{document}

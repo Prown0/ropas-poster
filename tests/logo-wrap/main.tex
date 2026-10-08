@@ -1,0 +1,9 @@
+% Test: Overlapping one-line logos are reallocated to several lines.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterSetPaperWidth{100mm}\posterSetLogoHeight{30mm}\logo{example-image-16x9.png,example-image-16x9.png,example-image-16x9.png}
+\begin{document}
+Visible test content.
+\end{document}

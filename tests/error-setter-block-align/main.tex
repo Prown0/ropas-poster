@@ -1,0 +1,9 @@
+% Test: PosterSetBlockAlign rejects an invalid BlockAlign value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\posterSetBlockAlign{middle}
+\begin{document}
+Visible test content.
+\end{document}

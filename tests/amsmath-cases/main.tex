@@ -1,0 +1,12 @@
+% Test: The amsmath cases environment works at block-relative text size.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+$f(x)=\begin{cases}0&x<0\\1&x\geq0\end{cases}$
+\end{posterblock}
+\end{postergrid}
+\end{document}

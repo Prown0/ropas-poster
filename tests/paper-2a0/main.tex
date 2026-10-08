@@ -1,0 +1,9 @@
+% Test: Named paper format 2A0 sets the specified portrait dimensions.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=2A0]{ropas-poster}
+\posterSetPaperMarginSide{0bp}\posterSetHeaderMarginTop{0bp}\posterSetHeaderMarginBottom{0bp}\posterSetBodyMarginTop{0bp}\posterSetBodyMarginBottom{0bp}\posterSetTextSize{8bp}
+\begin{document}
+Visible test content.
+\end{document}

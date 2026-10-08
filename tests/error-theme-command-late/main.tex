@@ -1,0 +1,8 @@
+% Test: A preamble-only theme command fails inside document.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\posterSetTextSize{25bp}Visible.
+\end{document}

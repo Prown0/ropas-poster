@@ -1,0 +1,10 @@
+% Test: A theme accepts the British sectiontitle-colour key.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{test-theme}{sectiontitle-colour=blue}\posterSetTheme{test-theme}
+\begin{document}
+\sectiontitle{Section heading}
+Visible test content.
+\end{document}

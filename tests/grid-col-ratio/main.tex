@@ -1,0 +1,15 @@
+% Test: Positive column ratios give asymmetric column widths.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{2}[col-ratio={2,1}]
+\begin{posterblock}{1}{1}[margin=0bp]
+Left.
+\end{posterblock}
+\begin{posterblock}{1}{2}[margin=0bp]
+Right.
+\end{posterblock}
+\end{postergrid}
+\end{document}

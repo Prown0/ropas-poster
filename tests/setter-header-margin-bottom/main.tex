@@ -1,0 +1,9 @@
+% Test: PosterSetHeaderMarginBottom accepts a valid HeaderMarginBottom value.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterSetHeaderMarginBottom{10bp}
+\begin{document}
+Visible test content.
+\end{document}

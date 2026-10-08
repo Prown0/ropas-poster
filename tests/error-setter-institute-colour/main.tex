@@ -1,0 +1,9 @@
+% Test: PosterSetInstituteColour rejects an invalid InstituteColour value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\posterSetInstituteColour{undefinedRopasColour}
+\begin{document}
+Visible test content.
+\end{document}

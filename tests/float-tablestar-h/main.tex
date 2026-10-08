@@ -1,0 +1,13 @@
+% Test: table* placement h respects its allowed position and caption.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+% Minimum-class-warning: 1
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}[column-count=2]
+\begin{table*}[h]\begin{tabular}{cc}A&B\end{tabular}\caption{Caption.}\end{table*}
+\end{posterblock}
+\end{postergrid}
+\end{document}

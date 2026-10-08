@@ -1,0 +1,9 @@
+% Test: PosterSetBodyBackground accepts a two-argument callback.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\newcommand{\testBodyBg}[2]{}\posterSetBodyBackground{\testBodyBg}
+\begin{document}
+Visible test content.
+\end{document}

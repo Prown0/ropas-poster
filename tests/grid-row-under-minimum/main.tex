@@ -1,0 +1,14 @@
+% Test: When the assigned grid height is below its minimum, auto content may overflow without clipping.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+% Minimum-class-info: 1
+\documentclass[paper={80mm,80mm}]{ropas-poster}
+\posterSetPaperMarginSide{2bp}\posterSetBlockMargin{2bp}\posterSetHeaderMarginTop{0bp}\posterSetHeaderMarginBottom{0bp}\posterSetBodyMarginTop{0bp}\posterSetBodyMarginBottom{0bp}
+\begin{document}
+\begin{postergrid}{1}{1}[row-ratio={auto}]
+\begin{posterblock}{1}{1}
+Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. Long content. 
+\end{posterblock}
+\end{postergrid}
+\end{document}

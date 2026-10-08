@@ -1,0 +1,73 @@
+\documentclass{ropas-poster}
+  \posterSetBlockColour{SNUBeige}
+  \posterSetTextColour{SNUGray}
+
+\usepackage{booktabs}
+
+\title{Example for \texttt{ropas-poster} class}
+\subtitle{With very very ultra hyper super tremendously extremely enormously long subtitle}
+\author{SHIN Chaehwan}
+\institute{Programming Research Laboratory (ROPAS), Seoul National University}
+\logos{../.images/logo-snu-eng.png,../.images/logo-ropas.png}
+
+\begin{document}
+  \begin{postergrid}{3}{2}
+    \begin{posterblock}{1}{1}
+      \blocktitle{1. Introduction}
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    \end{posterblock}
+
+    \begin{posterblock}{1}{2}[align=centre]
+      \blocktitle{2. Table (centre-aligned)}
+
+      \begin{table}
+        \caption{Small table}
+        \begin{tabular}{ccc}
+          \toprule
+          Row 1 & Row 2 & Row 3 \\
+          \midrule
+          Item 1 & Item 2 & Item 3 \\
+          Item 4 & Item 5 & Item 6 \\
+          \bottomrule
+        \end{tabular}
+      \end{table}
+    \end{posterblock}
+
+    \begin{posterblock}{2}{1}
+      \blocktitle{3. First body}
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    \end{posterblock}
+
+    \begin{posterblock}{2}{2}
+      \blocktitle{4. Second body}
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    \end{posterblock}
+
+    \begin{posterblock}{3}{1}
+      \blocktitle{5. Third body}
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    \end{posterblock}
+
+    \begin{posterblock}{3}{2}
+      \blocktitle{6. Conclusion}
+
+      Thank you!
+    \end{posterblock}
+  \end{postergrid}
+\end{document}

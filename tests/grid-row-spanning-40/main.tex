@@ -1,0 +1,16 @@
+% Test: For a 40mm grid, overlapping 30mm and 20mm block constraints determine auto/min/auto rows.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper={120mm,40mm}]{ropas-poster}
+\posterSetPaperMarginSide{0bp}\posterSetHeaderMarginTop{0bp}\posterSetHeaderMarginBottom{0bp}\posterSetBodyMarginTop{0bp}\posterSetBodyMarginBottom{0bp}\posterSetTextSize{8bp}
+\begin{document}
+\begin{postergrid}{3}{2}[row-ratio={auto,min,auto},block-sep=0bp,block-margin=0bp]
+\begin{posterblock}{1-2}{1}
+\noindent\vrule width0pt height30mm depth0pt
+\end{posterblock}
+\begin{posterblock}{2-3}{2}
+\noindent\vrule width0pt height20mm depth0pt
+\end{posterblock}
+\end{postergrid}
+\end{document}

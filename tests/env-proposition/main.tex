@@ -1,0 +1,12 @@
+% Test: The poster-provided proposition environment uses the documented ACM theorem style.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+\begin{proposition}A proposition statement.\end{proposition}
+\end{posterblock}
+\end{postergrid}
+\end{document}

@@ -1,0 +1,15 @@
+% Test: Footnote numbers continue across independent blocks.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{2}
+\begin{posterblock}{1}{1}
+First\footnote{First note.}
+\end{posterblock}
+\begin{posterblock}{1}{2}
+Second\footnote{Second note.}
+\end{posterblock}
+\end{postergrid}
+\end{document}

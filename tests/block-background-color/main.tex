@@ -1,0 +1,13 @@
+% Test: American spelling equivalent: A block-specific color paints only that block.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+% British-spelling counterpart: block-background/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}[color=yellow]
+Coloured.
+\end{posterblock}
+\end{postergrid}
+\end{document}

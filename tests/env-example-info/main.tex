@@ -1,0 +1,12 @@
+% Test: The example environment accepts optional theorem information.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+\begin{example}[Named]A statement.\end{example}
+\end{posterblock}
+\end{postergrid}
+\end{document}

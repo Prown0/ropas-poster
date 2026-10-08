@@ -1,0 +1,10 @@
+% Test: A theme accepts the British author-colour key.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{test-theme}{author-colour=red}\posterSetTheme{test-theme}
+\author{Ada}
+\begin{document}
+Visible test content.
+\end{document}

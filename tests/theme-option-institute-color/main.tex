@@ -1,0 +1,11 @@
+% Test: American spelling equivalent: A theme accepts the American institute-color key.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+% British-spelling counterpart: theme-option-institute-colour/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{test-theme}{institute-color=blue}\posterSetTheme{test-theme}
+\institute{Lab}
+\begin{document}
+Visible test content.
+\end{document}

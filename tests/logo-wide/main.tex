@@ -1,0 +1,9 @@
+% Test: A logo wider than the available horizontal region remains unclipped.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper={50mm,200mm}]{ropas-poster}
+\posterSetPaperMarginSide{2bp}\posterSetLogoHeight{80mm}\logo{example-image-16x9.png}
+\begin{document}
+Visible test content.
+\end{document}

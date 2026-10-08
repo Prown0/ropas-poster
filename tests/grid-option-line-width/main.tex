@@ -1,0 +1,12 @@
+% Test: Postergrid line-width accepts its valid value.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}[line-width=2bp]
+\begin{posterblock}{1}{1}
+Grid option test.
+\end{posterblock}
+\end{postergrid}
+\end{document}

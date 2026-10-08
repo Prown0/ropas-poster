@@ -1,0 +1,8 @@
+% Test: Document accepts multiple unnumbered section titles in body mode.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\sectiontitle{First}First paragraph.\sectiontitle{Second}Second paragraph.
+\end{document}

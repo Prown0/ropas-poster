@@ -1,0 +1,9 @@
+% Test: A negative document content height is an error.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper={100mm,20mm}]{ropas-poster}
+\posterSetHeaderMarginTop{20mm}\posterSetHeaderMarginBottom{20mm}
+\begin{document}
+Visible.
+\end{document}

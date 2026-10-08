@@ -1,0 +1,13 @@
+% Test: When first-column filling would overflow, body text balances across columns.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper={180mm,100mm}]{ropas-poster}
+\posterSetPaperMarginSide{5bp}\posterSetBlockMargin{4bp}\posterSetHeaderMarginTop{0bp}\posterSetHeaderMarginBottom{0bp}\posterSetBodyMarginTop{0bp}\posterSetBodyMarginBottom{0bp}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}[column-count=3,text-size=18bp]
+Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. Balanced text. 
+\end{posterblock}
+\end{postergrid}
+\end{document}

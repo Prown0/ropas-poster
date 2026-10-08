@@ -1,0 +1,12 @@
+% Test: Postergrid block-margin rejects its invalid value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}[block-margin=-1bp]
+\begin{posterblock}{1}{1}
+Invalid grid option.
+\end{posterblock}
+\end{postergrid}
+\end{document}

@@ -1,0 +1,12 @@
+% Test: The final duplicate block option overrides and validates the earlier value.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}[margin=-1bp,margin=0bp]
+Final option.
+\end{posterblock}
+\end{postergrid}
+\end{document}

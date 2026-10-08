@@ -1,0 +1,9 @@
+% Test: PosterSetBlockColumnCount accepts a valid BlockColumnCount value.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterSetBlockColumnCount{2}
+\begin{document}
+Visible test content.
+\end{document}

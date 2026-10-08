@@ -1,0 +1,9 @@
+% Test: PosterSetTextSize rejects an invalid TextSize value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\posterSetTextSize{0bp}
+\begin{document}
+Visible test content.
+\end{document}

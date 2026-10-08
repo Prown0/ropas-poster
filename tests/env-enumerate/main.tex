@@ -1,0 +1,12 @@
+% Test: The supported LaTeX environment enumerate compiles and typesets inside a block.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\begin{document}
+\begin{postergrid}{1}{1}
+\begin{posterblock}{1}{1}
+\begin{enumerate}\item First\item Second\end{enumerate}
+\end{posterblock}
+\end{postergrid}
+\end{document}

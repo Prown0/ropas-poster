@@ -1,0 +1,16 @@
+% Test: The document body itself uses half its text-size as the tabular
+% padding on each side of every column, without a posterblock.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\posterSetTextSize{20bp}
+\begin{document}
+\ifdim\tabcolsep=10bp\else
+  \PackageError{ropas-test}{Incorrect document tabular spacing}{}
+\fi
+\begin{tabular}{cc}
+  One & Two \\
+  Three & Four
+\end{tabular}
+\end{document}

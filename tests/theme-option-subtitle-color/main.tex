@@ -1,0 +1,11 @@
+% Test: American spelling equivalent: A theme accepts the American subtitle-color key.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+% British-spelling counterpart: theme-option-subtitle-colour/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{test-theme}{subtitle-color=blue}\posterSetTheme{test-theme}
+\subtitle{Subtitle}
+\begin{document}
+Visible test content.
+\end{document}

@@ -1,0 +1,10 @@
+% Test: American spelling equivalent: PosterSetInstituteColor rejects an invalid InstituteColor value.
+% Expected: class-error
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+% British-spelling counterpart: error-setter-institute-colour/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\posterSetInstituteColor{undefinedRopasColour}
+\begin{document}
+Visible test content.
+\end{document}

@@ -1,0 +1,9 @@
+% Test: LuaLaTeX loads maybemath separately because it conflicts with a grouped package load, although it works on its own.
+% Expected: success
+% Engines: lualatex
+% Visual-review: no
+% Package-members: maybemath
+\documentclass[paper=A4]{ropas-poster}
+\usepackage{maybemath}
+\begin{document}
+\end{document}

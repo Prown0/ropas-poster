@@ -1,0 +1,10 @@
+% Test: American spelling equivalent: Selecting a theme copies current theme values immediately.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+% British-spelling counterpart: theme-switch-timing/main.tex
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{other}{text-color=red}\posterSetTheme{other}\posterSetTextColor{blue}
+\begin{document}
+Visible test content.
+\end{document}

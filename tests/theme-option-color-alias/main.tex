@@ -1,0 +1,9 @@
+% Test: American color spelling aliases British colour in theme keys.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: yes
+\documentclass[paper=A4]{ropas-poster}
+\posterDefineTheme{alias}{text-color=blue}\posterSetTheme{alias}
+\begin{document}
+Visible test content.
+\end{document}
