@@ -6,7 +6,7 @@
 \subtitle{Basic example}
 \author{SHIN Chaehwan}
 \institute{Programming Research Laboratory (ROPAS), Seoul National University}
-\logos{../.images/logo-snu-eng.png,../.images/logo-ropas.png}
+\logo{../.images/logo-snu-eng.png,../.images/logo-ropas.png}
 
 \begin{document}
   \begin{postergrid}{1}{2}
@@ -15,88 +15,34 @@
         \begin{posterblock}{1}{1}
           \blocktitle{1. Mathematical expressions}
 
-          If \begin{math}
-            {x}\mathrel{\leq}{y}
-          \end{math} and \begin{math}
-            {y}\mathrel{\leq}{z}
-          \end{math}, then \begin{math}
-            {x}\mathrel{\leq}{z}
-          \end{math} for all \begin{math}
-            {x,y,z}\mathrel{\in}{X}
-          \end{math}.
-          That is, \begin{displaymath}
-            {\forall}{{x,y,z}\mathrel{\in}{X}}.\,{{{{x}\mathrel{\leq}{y}}\mathrel{\land}{{y}\mathrel{\leq}{z}}}\mathrel{\rightarrow}{{x}\mathrel{\leq}{z}}}.
-          \end{displaymath}
+          If \(x\leq y\) and \(y\leq z\), then \(x\leq z\) for all \(x,y,z\in X\).
+          That is, \[\forall x,y,z\in X.\,x\leq y\mathrel{\land}y\leq z\rightarrow x\leq z.\]
         \end{posterblock}
 
         \begin{posterblock}{2}{1}
           \blocktitle{2. Lists}
 
-          Let \begin{math}
-            G
-          \end{math} be a set, \begin{math}
-            {\bullet}\mathrel{:}{{{G}\mathbin{\times}{G}}\mathbin{\rightarrow}{G}}
-          \end{math}, \begin{math}
-            {{\left(\cdot\right)}^{-1}}\mathrel{:}{{G}\mathbin{\rightarrow}{G}}
-          \end{math}, and \begin{math}
-            {e}\mathrel{\in}{G}
-          \end{math}.
+          Let \(G\) be a set, \({\bullet}:G\times G\mathbin{\rightarrow}G\), \((\cdot)^{-1}:G\mathbin{\rightarrow}G\), and \(e\in G\).
           If \begin{itemize}
             \item
-            \begin{math}
-              \bullet
-            \end{math} is associative,
+            \(\bullet\) is associative,
             \item
-            \begin{math}
-              {{e}\mathbin{\bullet}{x}}\mathrel{=}{x}
-            \end{math} and \begin{math}
-              {{x}\mathbin{\bullet}{e}}\mathrel{=}{x}
-            \end{math} for all \begin{math}
-              {x}\mathrel{\in}{G}
-            \end{math}, and
+            \(e\bullet x=x\) and \(x\bullet e=x\) for all \(x\in G\), and
             \item
-            \begin{math}
-              {{{x}^{-1}}\mathbin{\bullet}{x}}\mathrel{=}{e}
-            \end{math} and \begin{math}
-              {{x}\mathbin{\bullet}{{x}^{-1}}}\mathrel{=}{e}
-            \end{math} for all \begin{math}
-              {x}\mathrel{\in}{G}
-            \end{math},
-          \end{itemize} then we call \begin{math}
-            \left({G},{\bullet},{{\left(\cdot\right)}^{-1}},{e}\right)
-          \end{math} a \textbf{group}.
+            \(x^{-1}\bullet x=e\) and \(x\bullet x^{-1}=e\) for all \(x\in G\),
+          \end{itemize} then we call \(\left(G,{\bullet},(\cdot)^{-1},e\right)\) a \textbf{group}.
 
-          Let \begin{math}
-            G
-          \end{math} be a set and \begin{math}
-            {\bullet}\mathrel{:}{{{G}\mathbin{\times}{G}}\mathbin{\rightarrow}{G}}
-          \end{math}.
+          Let \(G\) be a set and \({\bullet}:G\times G\mathbin{\rightarrow}G\).
           If \begin{enumerate}
             \item
-            \begin{math}
-              \bullet
-            \end{math} is associative, and
+            \(\bullet\) is associative, and
             \item
-            there exists \begin{math}
-              {e}\mathrel{\in}{G}
-            \end{math} such that \begin{enumerate}
+            there exists \(e\in G\) such that \begin{enumerate}
               \item
-              \begin{math}
-                {{e}\mathbin{\bullet}{x}}\mathrel{=}{x}
-              \end{math}, and
+              \(e\bullet x=x\), and
               \item
-              there exists \begin{math}
-                {y}\mathrel{\in}{G}
-              \end{math} such that \begin{math}
-                {{y}\mathbin{\bullet}{x}}\mathrel{=}{e}
-              \end{math} for all \begin{math}
-                {x}\mathrel{\in}{G}
-              \end{math},
-            \end{enumerate} then there uniquely exists a group with \begin{math}
-              G
-            \end{math} and \begin{math}
-              \bullet
-            \end{math}.
+              there exists \(y\in G\) such that \(y\bullet x=e\) for all \(x\in G\),
+            \end{enumerate} then there uniquely exists a group with \(G\) and \(\bullet\).
           \end{enumerate}
         \end{posterblock}
       \end{postergrid}
@@ -130,56 +76,16 @@
               \toprule
               Symbol & English & & German \\
               \midrule
-              \begin{math}
-                0
-              \end{math} & zero & \begin{math}
-                \leftrightarrow
-              \end{math} & Null \\
-              \begin{math}
-                1
-              \end{math} & one & \begin{math}
-                \leftrightarrow
-              \end{math} & Eins \\
-              \begin{math}
-                2
-              \end{math} & two & \begin{math}
-                \leftrightarrow
-              \end{math} & Zwei \\
-              \begin{math}
-                3
-              \end{math} & three & \begin{math}
-                \leftrightarrow
-              \end{math} & Drei \\
-              \begin{math}
-                4
-              \end{math} & four & \begin{math}
-                \leftrightarrow
-              \end{math} & Vier \\
-              \begin{math}
-                5
-              \end{math} & five & \begin{math}
-                \leftrightarrow
-              \end{math} & F\"unf \\
-              \begin{math}
-                6
-              \end{math} & six & \begin{math}
-                \leftrightarrow
-              \end{math} & Sechs \\
-              \begin{math}
-                7
-              \end{math} & seven & \begin{math}
-                \leftrightarrow
-              \end{math} & Sieben \\
-              \begin{math}
-                8
-              \end{math} & eight & \begin{math}
-                \leftrightarrow
-              \end{math} & Acht \\
-              \begin{math}
-                9
-              \end{math} & nine & \begin{math}
-                \leftrightarrow
-              \end{math} & Neun \\
+              \(0\) & zero & \(\leftrightarrow\) & Null \\
+              \(1\) & one & \(\leftrightarrow\) & Eins \\
+              \(2\) & two & \(\leftrightarrow\) & Zwei \\
+              \(3\) & three & \(\leftrightarrow\) & Drei \\
+              \(4\) & four & \(\leftrightarrow\) & Vier \\
+              \(5\) & five & \(\leftrightarrow\) & F\"unf \\
+              \(6\) & six & \(\leftrightarrow\) & Sechs \\
+              \(7\) & seven & \(\leftrightarrow\) & Sieben \\
+              \(8\) & eight & \(\leftrightarrow\) & Acht \\
+              \(9\) & nine & \(\leftrightarrow\) & Neun \\
               \bottomrule
             \end{tabular}
           \end{table}

@@ -1,0 +1,12 @@
+% Test: The obsolete \logos command is not defined by the class, while the
+% documented \logo command remains available before and after document start.
+% Expected: success
+% Engines: pdflatex,xelatex,lualatex
+% Visual-review: no
+\documentclass[paper=A4]{ropas-poster}
+\ifdefined\logos\errmessage{obsolete logos command is defined}\fi
+\ifdefined\logo\else\errmessage{logo command is missing}\fi
+\begin{document}
+\ifdefined\logos\errmessage{obsolete logos command is defined in document}\fi
+Visible test content.
+\end{document}

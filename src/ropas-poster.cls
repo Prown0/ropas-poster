@@ -4,7 +4,7 @@
 \ProvidesExplClass
   {ropas-poster}
   {2026-10-09}
-  {0.0.0b0}
+  {0.0.0b1}
   {Single-page ROPAS posters}
 
 % cmap must precede fontenc; it only supports PDF output from pdfTeX.
@@ -1439,18 +1439,6 @@
     \ropas_reject_header_notes:n {#2}
     \ropas_append_header_people:Nn \g_ropas_institute_tl {#2} }
 
-\NewDocumentCommand \logos { O{30mm} m }
-  {
-    \ropas_set_nonnegative_dim:Nnn \g_ropas_logo_height_dim
-      { Logo~height } {#1}
-    \seq_gclear:N \g_ropas_logos_seq
-    \clist_map_inline:nn {#2}
-      {
-        \tl_if_blank:nF {##1}
-          { \seq_gput_right:Nx \g_ropas_logos_seq { \tl_trim_spaces:n {##1} } }
-      }
-  }
-
 % The public logo interface appends, so separate calls and a comma list have
 % the same meaning.  A brace-protected comma is kept inside one filename by
 % the clist parser.
@@ -1745,7 +1733,7 @@
         posterSetSectiontitleColour,posterSetSectiontitleColor,
         posterSetTextSize,posterSetTextColour,posterSetTextColor,
         posterSetLogoHeight,title,subtitle,
-        author,institute,logo,logos
+        author,institute,logo
       }
       {\cs_gset_eq:cN {#1} \ropas_late_preamble_command:}
   }
